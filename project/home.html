@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="learning management system">
+<meta name="keywords" content="html,css,javascript,php">
+<meta name="author" content="lasanga sandaruwan">
+
+<link rel="icon" href="main.ico" type="image/x-icon">
+<link href="home.css" rel="stylesheet" type="text/css">
+
+<title>LMS-Learning Management System</title>
+
+<style>
+#header{background-color:cyan;animation-name:heading;animation-duration:4s;animation-iteration-count:infinite}
+
+@-webkit-keyframes heading { from{background-color:cyan;}to{background-color:black;}from{background-color:black;}to{background-color:cyan;}}
+</style>
+</head>
+
+<body>
+<div id="header" >
+<h1>Learning Management System</h1>
+
+</div>
+<br>
+
+<div class="log">
+<p id="sign">Don't have an account?<a id="a" href ="sign.html">sign in</a></p>
+<form action="log.php" method="POST">
+
+User-name:<input type="text" id="un" name="un">
+Password:<input type="password" id="pw" name="pw">
+<input type="submit" value="login" id="sub" name="sub">
+</form>
+</div>
+
+<br>
+<hr>
+
+<div id="nav">
+<nav>
+<button class="button" onclick=window.location.href="home.html">Home</button>
+<button class="button" onclick=window.location.href="about.html">About us</button> 
+<button class="button" onclick=window.location.href="contact.html">Contact</button> 
+<button class="button" onclick=window.location.href="courses.html">Courses</button> 
+<button class="button" onclick=window.location.href="student.html">Resources</button> 
+<button class="button" onclick=window.location.href="allocation.html">Allocations</button> 
+
+</nav>
+<div id="mid">
+
+<p><marquee direction="right"> LMS enables you to find information about all the academic and non academic facts related to the university.</marquee></p>
+
+</div>
+</div>
+
+<div class="layout1">
+
+<img id="img" src="1.jpg" alt="image1" >
+
+<script>
+var img=1;
+function changeImg()
+{
+img++;
+var a=img%10;
+document.getElementById("img").src=img+".jpg";
+}
+setInterval(changeImg,1000);
+</script>
+
+
+</div>
+
+<div class="layout2">
+</div>
+
+<div class="layout3">
+</div>
+<br>	
+
+<div class="footer">
+<footer>
+<p>agasgasd</p>
+</footer>
+</div>
+
+
+
+
+</body>
+</html>
