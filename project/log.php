@@ -1,43 +1,17 @@
 <?php
-
+include 'core/functions/functions.php';
 $link=mysqli_connect('localhost','root','','suser');
 
+
+global $user;
 $user = $_POST['un'];
 $pass = $_POST['pw'];
+$pass =md5($pass);
 
 
-
-
-
-
-$sql=mysqli_query($link,"select * from sign where username='$user' and password='$pass");
-echo "$sql";
-die();
-$row = mysqli_fetch_array($sql);
-
-if($row['username'] == $user && ['password'] == $pass )
-{
-	echo "login successful";
-}
-else{
-	echo "login failed";
-}
-
+login($user,$pass);
 
 
 
 
 ?>
-<!doctype html>
-<html>
-<head>
-<title>LMS-Learning Management System</title> 
-<meta charset="UTF-8">
-<link rel="icon" href="main.ico" type="type/x-icon">
-</head>
-<body>
-
-<h1>You are signed in</h1>
-
-</body>
-</html>
