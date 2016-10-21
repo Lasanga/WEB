@@ -1,0 +1,3 @@
+<footer>
+LMS - COPYRIGTHS @
+</footer>
