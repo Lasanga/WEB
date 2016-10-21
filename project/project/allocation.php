@@ -1,9 +1,10 @@
-<!doctype>
+<!doctype html>
 <html>
 <?php
-include 'core/functions/protected.php';
+include 'core/functions/functions.php';
 
-protect();
+access();
+
 ?>
 
 <head>

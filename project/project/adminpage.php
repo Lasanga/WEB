@@ -1,4 +1,4 @@
-<!doctype>
+<!doctype html>
 <html>
 <head>
 <meta charset="UTF-8">
@@ -13,7 +13,7 @@
 </head>
 <?php
 include 'core/functions/functions.php';
-
+access();
  ?>
  <body>
    <div class="navi">

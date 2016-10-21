@@ -4,18 +4,23 @@ include 'core/basic.php';
 
 ///////////////////////////////////////////////////////////////////////
 
-function logg()
+function access()
 {
-	return(isset($_SESSION['user_id'])) ? true: false;
+	if (isset($_SESSION['user_id'])==false)
+
+		{
+	  header('location:error.php');
+		}
 }
 
 
 
 function check()
 {
+
 if (isset($_SESSION['user_id']))
 	{
-	echo "You are logged in";
+	echo "Welcome ".$_SESSION['user_id'];
 	}
 	else
 	{
@@ -43,7 +48,8 @@ if($row['username'] == $user && $row['password'] == $pass )
 
 {
 	$session_id = $row['s_id'];
-	$_SESSION['user_id'] = $row['s_id'];
+
+	$_SESSION['user_id'] = $row['username'];
 	echo ($_SESSION['user_id']);
 
 	header ('location:home2.php');
@@ -72,7 +78,7 @@ $pass =md5($pass);
 	}
 	else {
 		{
-header('location: home.php');
+header('location: home2.php');
 		}
 	}
 

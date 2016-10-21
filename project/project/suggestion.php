@@ -11,10 +11,10 @@ $rel =mysqli_query($link,$sql);
 
 if($rel == 1)
 {
-  echo "done";
+  echo "<h1>Your suggestion is added to our database thank you for suggesting. </h1>";
 }
 else {
-  echo "not done";
+  echo "<h1>Sorry! There was an error.</h1>";
 }
 
 

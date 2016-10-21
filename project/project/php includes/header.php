@@ -33,7 +33,7 @@ Password:<input type="password" id="pw" name="pw" required>
 <ul id="list">
   <li class="li"><a href="home.php  " >Home</a></li>
   <li class="li"><a href="about.php  " target="main layout">About us</a></li>
-  <li class="li"><a href="contact.php" target="main layout">Contact</a></li>
+  <li class="li"><a href="contactus.php" target="main layout">Contact</a></li>
   <li class="li"><a href="courses.php" target="main layout">Courses</a></li>
   <li class="li"><a href="student.php" target="main layout">Resources</a></li>
   <li class="li"><a href="allocation.php" target="main layout">Allocations</a></li>
