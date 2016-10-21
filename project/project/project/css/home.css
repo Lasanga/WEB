@@ -1,0 +1,150 @@
+body{
+
+  font-family:;
+}
+
+#pic
+{
+width:160px;
+height:140px;
+
+float:right;
+
+}
+h1,h2
+{
+font-family: Algerian;
+color:white;
+}
+#frame
+{
+ border:none;
+  width:100%;
+  height:1000px;
+}
+
+
+
+#header
+{
+background-color: black;
+padding:10px;
+text-align:left;
+}
+
+
+#above
+{
+text-decoration:none;
+}
+#a:hover
+{
+font-size:26px;
+}
+form
+{
+float:right
+}
+input[type="text"]
+{
+border-radius:none;
+}
+input[type="password"]
+{
+border-radius:none;
+}
+input[type="submit"]
+{
+background-color:#d6d6c2;
+border-radius:20px;
+}
+#sub:active
+{
+background-color:gray;
+}
+#list{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+.li {
+    float: left;
+}
+
+.li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.li a:hover {
+    background-color:gray;
+}
+#admin
+{
+  float:right;
+}
+#admin a{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none
+}
+#admin a:hover {
+    background-color:gray;
+}
+
+#mid{
+padding:0.1px;
+background-color:white;
+font-size:15px;
+font-family:arial;
+font-weight:bold;
+}
+
+.button
+{
+background-color:#c2c2a3;
+color:#ffffff;
+padding:26px;
+cursor:pointer;
+border:none;
+margin:9px auto;;
+
+}
+
+#footer
+{
+  color:black;
+padding:10px;
+border:1px solid black ;
+background-color:black;
+}
+
+#logout
+{
+  padding:5px;
+}
+.chp
+{
+  float:left;
+border-radius: 0px;
+
+}
+#fot{
+  font-size:12px;
+  background-color:black;
+  padding:3px;
+}
+
+
+footer{
+color:white;
+
+}

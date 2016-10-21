@@ -1,0 +1,71 @@
+.sign
+{
+padding:40px;
+background-color:gray;
+
+}
+.s1
+{
+padding:40px;
+background-color:white;
+}
+.in
+{
+padding:40px;
+background-color:#c2c2a3;
+}
+form
+{
+padding:10px;
+}
+.but
+{
+cursor:pointer;
+background-color:#d6d6c2;
+padding:10px;
+color:black;
+border-radius:50px;
+}
+.but:hover
+{
+background-color:gray;
+}
+input[type=text] 
+{
+width: 50%;
+padding: 12px ;
+margin: 8px ;
+box-sizing: border-box;
+border-radius: 30px;
+}
+input[type=password]
+ {
+width: 50%;
+padding: 12px ;
+margin: 8px ;
+box-sizing: border-box;
+border-radius: 30px;
+}
+input[type=submit]
+{
+width:50%;
+padding:12px;
+margin :8px;
+box-sizing: border-box;
+border-radius: 30px;
+color:black;
+cursor:pointer;
+}
+
+#sub:active
+{
+background-color:gray;
+}
+#bb
+{
+width:300px;
+height:300px;
+float:right;
+padding:80px;
+
+}
