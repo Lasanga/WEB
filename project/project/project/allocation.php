@@ -4,7 +4,7 @@
 include 'core/functions/functions.php';
 
 access();
-
+teacher();
 ?>
 
 <head>

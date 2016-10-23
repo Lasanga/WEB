@@ -26,8 +26,9 @@ check();
   <li class="li"><a href="home2.php  " >Home</a></li>
   <li class="li"><a href="about.php  " target="main layout">About us</a></li>
   <li class="li"><a href="contactus.php" target="main layout">Contact</a></li>
-  <li class="li"><a href="courses.php" target="main layout">Courses</a></li>
+  <li class="li"><a href="faculty.php" target="main layout">Faculties</a></li>
   <li class="li"><a href="student.php" target="main layout">Resources</a></li>
+  <li class="li"><a href="uploads.php" target="main layout">upload</a></li>
   <li class="li"><a href="allocation.php" target="main layout">Allocations</a></li>
   <li class="li"><a href="signform.php" target="main layout">Register</a></li>
   <li id="admin"><a href="adminpage.php" >settings<img src="images/setting.jpg" width="20px" height="14px"></a></li>

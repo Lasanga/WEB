@@ -1,9 +1,10 @@
+<!doctype html>
 <html>
+<meta charset = "UTF-8">
 <head>
-<link rel="stylesheet" type="text/css"
-href="managementc.css">
+<link rel="stylesheet" type="text/css" href="css/managementc.css">
 </head>
-<body background="img3.jpg">
+<body background="images/img3.jpg">
 <h1>Faculty Of Computing</h1>
 <p>The Faculty of Computing is another main Faculty which provides world class training and education in:</p>
 <ul>
@@ -25,6 +26,6 @@ href="managementc.css">
 </pre>
 </ul>
 </h3>
-
+<a href="faculty.php">Go back</a>
 </body>
 </html>

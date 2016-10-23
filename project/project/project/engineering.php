@@ -1,9 +1,10 @@
+<!doctype html>
 <html>
 <head>
-<link rel="stylesheet" type="text/css"
-href="managementc.css">
+<meta charset = "UTF-8">
+<link rel="stylesheet" type="text/css" href="css/managementc.css">
 </head>
-<body background="img4.jpg">
+<body background="images/img4.jpg">
 <h1>Faculty Of Engineering</h1>
 <p>The Faculty of Engineering offers degrees in:</p>
 <ul>
@@ -24,6 +25,6 @@ href="managementc.css">
 <li>BSc Engineering (Hons) Mechanical Engineering</li>
 </pre></ul>
 </h3>
-
+<a href="faculty.php">Go back</a>
 </body>
 </html>

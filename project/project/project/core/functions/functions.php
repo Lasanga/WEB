@@ -4,12 +4,15 @@ include 'core/basic.php';
 
 ///////////////////////////////////////////////////////////////////////
 
+
+
 function access()
 {
-	if (isset($_SESSION['user_id'])==false)
+	if (isset($_SESSION['user_id']) == false)
 
 		{
-	  header('location:error.php');
+	  header('Location:error.php');
+		exit();
 		}
 }
 
@@ -20,13 +23,14 @@ function check()
 
 if (isset($_SESSION['user_id']))
 	{
-	echo "Welcome ".$_SESSION['user_id'];
+	echo $_SESSION['user_id']." is active now ";
 	}
 	else
 	{
 echo "you are not logged in";
 	}
 }
+
 
 
 
@@ -42,13 +46,10 @@ $pass =md5($pass);
     $sql=mysqli_query($link,"select * from sign where username='$user' and password='$pass'");
 	  $row = mysqli_fetch_array($sql);
 
-
-
 if($row['username'] == $user && $row['password'] == $pass )
 
 {
 	$session_id = $row['s_id'];
-
 	$_SESSION['user_id'] = $row['username'];
 	echo ($_SESSION['user_id']);
 
@@ -60,47 +61,103 @@ else
 }
 }
 
-function admin()
+function basicadmin()
 {
-$user = $_POST['un'];
-$pass = $_POST['pw'];
-$pass =md5($pass);
-
 	$link=mysqli_connect('localhost','root','','suser');
-	$admin = mysqli_query($link,"select admin from sign where username='$user' ");
-	$ad = mysqli_fetch_array($admin);
+
+$sql=mysqli_query($link,"select admin from sign where username ='{$_SESSION['user_id']}'");
+$row =mysqli_fetch_array($sql);
+
+if( $row['admin'] == 0|| $row['admin'] == 2)
+{
+	header('Location:adminerror.php');
+}
 
 
-	if($ad['admin'] == 1)
+}
+
+function teacher()
+{
+	$link=mysqli_connect('localhost','root','','suser');
+
+$sql=mysqli_query($link,"select admin from sign where username ='{$_SESSION['user_id']}'");
+$row =mysqli_fetch_array($sql);
+
+if($row['admin'] == 2 )
+{
+
+}
+else
+{
+	if($row['admin'] == 1)
 	{
-		header('location: adminpage.php');
 
+	}
+	else
+	 {
+		header('Location:adminerror.php');
+	}
+}
+
+
+}
+function changepw()
+{
+$link = mysqli_connect('localhost','root','','suser');
+
+$username    =$_POST['username'];
+$password    = md5($_POST['pass']);
+$newpassword = md5($_POST['rnpass']);
+
+$sql = mysqli_query($link,"UPDATE sign SET password ='$newpassword' WHERE password = '$password' AND username = '$username'");
+
+if($sql === 1)
+{
+  echo "<h1>The password has been changed</h1>";
+	echo "<a href = adminpage.php>Go back</a>";
+}
+else {
+  echo "<h1>Sorry! Couldn not change the password.</h1>";
+	echo "<a href = adminpage.php>Go back</a>";
+}
+}
+
+function allocation()
+{
+	$username = $_POST['name'];
+	$time     = $_POST['check'];
+	$hall     = $_POST['hall'];
+
+	$sql = "insert into allocation(user,time,hall)values('$username','$time','$hall')";
+	$rel = mysqli_query($link,$sql);
+	if($rel == 1)
+	{
+		echo "<h1>Your Hall is allocated for the time given. Thank you!</h1><a href = home2.php>go back to home</a>";
 	}
 	else {
-		{
-header('location: home2.php');
-		}
+		echo "couldnt allocate the hall needed";
 	}
 
 }
 
-
-function changepw()
-
+function upload()
 {
-	$pass = $_POST['pass'];
-	$npass = $_POST['rnpass'];
+	$path = 'uploaded/';
 
+	$uploadfile = $path.basename($_FILES['upload']['name']);
+	$type       = $path.basename($_FILES['upload']['type']);
+	$size       = $path.basename($_FILES['upload']['type']);
 
-		$link=mysqli_connect('localhost','root','','suser');
-		$pw = mysqli_query($link,"update sign set password = '$npass' where password ='$pass' ");
+	if($size > 500000)
+	{
+	  echo "file is too large";
+	}
 
-
+	else {
+	  move_uploaded_file($_FILES['upload']['tmp_name'],$uploadfile);
+	  echo "<h1> Files are uploaded without any issues</h1>";
+		exit();
+	}
 }
-
-
-
-
-
 
 ?>

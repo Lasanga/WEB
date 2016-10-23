@@ -19,6 +19,7 @@ color:white;
 #frame
 {
  border:none;
+ margin: auto;
   width:100%;
   height:1000px;
 }
