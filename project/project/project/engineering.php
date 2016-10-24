@@ -21,7 +21,7 @@
 <li><a href="e_bsc_ce.html">BSc Engineering (Hons) Civil Engineering</a></li>
 <li><a href="e_bsc_eee.html">BSc Engineering (Hons) Electrical & Electronic Engineering</a></li>
 <li><a href="e_bsc_mate.html">BSc Engineering (Hons) Materials Engineering</a></li>
-<li><a href="e_bsc_mace.html">BSc Engineering (Hons) Mechanical Engineering</a></li>
+<li><a href="e_bsc_mece.html">BSc Engineering (Hons) Mechanical Engineering</a></li>
 </pre></ul>
 </h3>
 <a href="faculty.php">Go back</a>
