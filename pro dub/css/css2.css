@@ -1,0 +1,26 @@
+body{}
+
+h1{ 	color:#000000;
+	font-family:Trebuchet MS;
+	font-size:45;}
+
+p{	font-size:20;
+	color:000000;
+	font-family:Trebuchet MS;}
+
+h2{	font-size:30;
+	color:#000000;
+	font-family:Trebuchet MS;}
+
+ul{     font-family:Trebuchet MS;
+        text-decoration:none;
+        color:#000000;
+	font-size:20;}
+
+a{      text-decoration:none;
+        color:#000000;}
+
+ul#x{	color:000000;
+        text-decoration:none;
+	font-family:Trebuchet MS;
+	font-size:25;}

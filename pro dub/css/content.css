@@ -1,0 +1,28 @@
+div#tex {
+   max-height:400px;
+   width:100%;
+   float:left;
+   padding:10px;
+   font-size:16px
+
+}
+div#top {
+    max-width:1500px;
+    margin: auto;
+    background-color:#262626;
+
+}
+ img{
+
+	width:100%;
+	max-height:400px;
+	margin:auto
+}
+#mid
+{
+  width: :90%;
+}
+#buttons
+{
+  float:left;
+}

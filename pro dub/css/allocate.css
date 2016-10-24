@@ -1,0 +1,17 @@
+
+#table
+{
+
+  width:50%;
+}
+table td
+{
+  padding:10px;
+}
+
+#one , #two
+{
+  padding : 10px;
+  border : 1px solid black;
+
+}
