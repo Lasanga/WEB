@@ -18,11 +18,10 @@
 <h2>Programmes:</h2>
 <h3>
 <ul id="x"><pre>
-<li>BSc Engineering (Hons) Civil Engineering</li>
-<li>BSc Engineering (Hons) Electrical & Electronic Engineering</li>
-<li>BSc Engineering (Hons) Materials Engineering</li>
-<li>BSc Engineering (Hons) Mechanical Engineering</li>
-<li>BSc Engineering (Hons) Mechanical Engineering</li>
+<li><a href="e_bsc_ce.html">BSc Engineering (Hons) Civil Engineering</a></li>
+<li><a href="e_bsc_eee.html">BSc Engineering (Hons) Electrical & Electronic Engineering</a></li>
+<li><a href="e_bsc_mate.html">BSc Engineering (Hons) Materials Engineering</a></li>
+<li><a href="e_bsc_mace.html">BSc Engineering (Hons) Mechanical Engineering</a></li>
 </pre></ul>
 </h3>
 <a href="faculty.php">Go back</a>
