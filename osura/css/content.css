@@ -1,0 +1,19 @@
+div#tex {
+   max-height:500px;
+   width:100%;
+   float:left;
+   padding:100px;
+   font-size:25px
+  
+}
+div#top {
+    max-width:1500px;
+    margin: auto;
+    
+}
+div#mid img{
+	
+	width:100%;
+	max-height:600px;
+	margin:auto
+}
