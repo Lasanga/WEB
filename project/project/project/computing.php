@@ -18,11 +18,11 @@
 <h2>Programmes:</h2>
 <h3>
 <ul id="x"><pre>
-<li>BSc (Hons) Computer Science</li>
-<li>BSc (Special) Management Information Systems</li>
-<li>BSc (Honours) Software Engineering</li>
-<li>BSc (Honours) Computer Networks</li>
-<li>BSc (Honours) Computer Security</li>
+<li><a href="c_bsc_cs.html">BSc (Hons) Computer Science</a></li>
+<li><a href="c_bsc_mis.html">BSc (Special) Management Information Systems</a></li>
+<li><a href="c_bsc_se.html">BSc (Honours) Software Engineering</a></li>
+<li><a href="c_bsc_cn.html">BSc (Honours) Computer Networks</a></li>
+<li><a href="c_bsc_csec.html">BSc (Honours) Computer Security</a></li>
 </pre>
 </ul>
 </h3>
