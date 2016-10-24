@@ -31,13 +31,13 @@ providing them the best possible educational experience. So, if you�re looking
 <h3>
 <ul id="x">
 <pre>
-<li>Postgraduate Diploma in Human Resource Management</li>
-<li>Postgraduate Diploma in Business Management</li>
-<li>BSc in Business Management (Human Resource Management) (Special)</li>
-<li>BSc in Business Management (Logistics Management) (Special)</li>
-<li>BSc in Business Management (industrial management) (Special)</li>
-<li>BSc in Business Management (Project management) (Special)</li>
-<li>BA in Business Communication</li>
+<li><a href="m_p_hr.html">Postgraduate Diploma in Human Resource Management</a></li>
+<li><a href="m_p_bm.html">Postgraduate Diploma in Business Management</a></li>
+<li><a href="m_bsc_bm.html">BSc in Business Management (Human Resource Management) (Special)</a></li>
+<li><a href="m_bsc_lm.html">BSc in Business Management (Logistics Management) (Special)</a></li>
+<li><a href="m_bsc_im.html">BSc in Business Management (industrial management) (Special)</a></li>
+<li><a href="m_bsc_pm.html">BSc in Business Management (Project management) (Special)</a></li>
+<li><a href="m_ba_bc.html">BA in Business Communication</a></li>
 </pre>
 </ul>
 </h3>
